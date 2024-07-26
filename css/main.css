@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: arial, helvetica, sans-serif; font-size: 16px; 
+}
+
+audio { 
+  display: block; 
+}
+.hidden { 
+  display: none; 
+}
+
+.audio-controls button {
+  background-color: green;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.track-ref { cursor: pointer; padding: 1em; }
