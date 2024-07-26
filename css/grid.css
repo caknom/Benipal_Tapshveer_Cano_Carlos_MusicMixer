@@ -13,7 +13,7 @@
 
  /* 1. ---General Grid Styles--- */
 
-html {
+ html {
   box-sizing: border-box;
 }
 
@@ -68,17 +68,7 @@ By setting box-sizing: inherit, the selected elements inherit the box-sizing pro
 /* 3. ---Tablet Library Grid Styles--- */
 
 @media screen and (min-width: 768px) {
-  .grid-con {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-column-gap: 20px;
-    max-width: 1199px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 
-  #hide {
-    display: none;
-  }
 
   .m-col-span-1 {grid-column: span 1 / span 1;}
   .m-col-span-2 {grid-column: span 2 / span 2;}
@@ -97,16 +87,7 @@ By setting box-sizing: inherit, the selected elements inherit the box-sizing pro
 /* 4. ---Desktop Library Grid Styles--- */
 
 @media screen and (min-width: 1200px) {
-  .grid-con {
-    max-width: 1919px;
-    grid-column-gap: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 
-  #hide {
-    display: none;
-  }
 
   .l-col-span-1 {grid-column: span 1 / span 1;}
   .l-col-span-2 {grid-column: span 2 / span 2;}
