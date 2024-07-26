@@ -1,6 +1,6 @@
 // Variables
 const albumCovers = document.querySelectorAll('#music-tracks img'),
-theAudioEl = document.querySelector('#audioEl'),
+theAudio = document.querySelector('#music'),
 playButton = document.querySelector('#playButton'),
 pauseButton = document.querySelector('#pauseButton'),
 rewindButton = document.querySelector('#rewindButton'),
@@ -10,30 +10,28 @@ volSlider = document.querySelector('#volumeControl');
 function loadAudio() {
     console.log(this.dataset.trackref);
     let currentSrc = `audio/${this.dataset.trackref}.mp3`;
-
-    theAudioEl.src = currentSrc;
-    theAudioEl.load();
-
+    theAudio.src = currentSrc;
+    theAudio.load();
     playAudio();
 }
 
 function playAudio() {
-    theAudioEl.play();
+    theAudio.play();
 }
 
 function pauseAudio() {
-    theAudioEl.pause();
+    theAudio.pause();
 }
 
 function restartAudio() {
-    theAudioEl.currentTime = 0;
+    theAudio.currentTime = 0;
     playAudio();
 }
 
 function setVolume() {
     console.log(this.value);
 
-    theAudioEl.volume = (this.value / 100);
+    theAudio.volume = (this.value / 100);
 }
 
 // Event Listeners
