@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Mixer</title>
-    <link href="/css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <title>Music Mixer</title>
 </head>
 <body>
 
-    <script src="./js/main.js"></script>
+  <section class="container">
+
+    <div id="bkground">
+      <img src="./Images/background.svg">
+    </div>
+
+    <audio id="audioEl" src="./audio/Ancient_Flame.mp3"></audio>
+
+
+    <section id="music-mixer">
+        <!-- these are the draggable audio tracks -->
+      <div id="music-tracks">
+        <img data-trackref="Ancient_Flame" src="./images/albatroz.jpeg" alt="Album Art" class="track-ref" draggable="true">
+        <img data-trackref="Eye_Shadows" src="./images/stp.jpeg" alt="Album Art" class="track-ref" draggable="true">
+      </div>
+
+      <!-- where we want to drop the audio tracks, dropzone -->
+      <div class="play-tracks">
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+      </div>
+    </section>
+
+    <section class="audio-controls">
+      <img id="playButton" src="Images/Play_Button.svg">
+      <img id="pauseButton" src="Images/Pause_Button.svg">
+      <img id="rewindButton" src="Images/Restart_button.svg">
+      <input id="volumeControl" type="range" min="0" max="100" step="1">
+    </section>
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
