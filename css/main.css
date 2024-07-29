@@ -1,23 +1,120 @@
+
 * {
   padding: 0;
   margin: 0;
-  border: none;
+  /* border: solid 0.5px; */
   box-sizing: border-box;
 }
 
-body { 
-  font-family: arial, helvetica, sans-serif; 
-  font-size: 16px; 
+html, body {
+  /* overflow: hidden;
+  height: 100%; */
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
 }
 
-.container {
-  background-image: url('../Images/background.svg');
+.backgroundStars {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(178,177,205);
+  background: radial-gradient(circle at center 15%, rgba(178,177,205,1) 21%, rgba(120,118,156,1) 45%, rgba(58,67,109,1) 100%);
+  overflow: hidden;
+}
+
+.container1 {
+  background-image: url('../images/svg_stars_1.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
+  animation: twinkle1 2.5s infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes twinkle1 {
+  from {
+      opacity: 0.5;
+      transform: scale(1);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1.015);
+  }
+}
+
+.container2 {
+  background-image: url('../images/svg_stars_2.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  animation: twinkle2 4s infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes twinkle2 {
+  from {
+      opacity: 0.3;
+      transform: scale(1);
+  }
+  to {
+      opacity: 1;
+      transform: scale(0.985);
+  }
+}
+
+.backgroundClouds {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url('../images/clouds_bg_back_left.svg'), url('../images/clouds_bg_back_right.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundPlanets {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url('../images/planets_bg_left.svg'),
+  url('../images/planets_bg_right.svg'),
+  url('../images/planets_bg_middle.svg'),
+  url('../images/planets_bg_middle_moon.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.foregroundClouds {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url('../images/clouds_bg_top_left.svg'), url('../images/clouds_bg_top_right.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgrounPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/dj_panel_bg.svg');
+  background-size: cover;
+  background-position: center;
 }
 
 audio { 
@@ -26,6 +123,36 @@ audio {
 
 .hidden { 
   display: none; 
+}
+
+#music-tracks {
+  transform: scale(.07);
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.audioPanel {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.audioControls {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  transform: scale(1.2);
+  margin-bottom: 30px;
+}
+
+#volumeControl {
+  position: absolute;
+  transform: scale(1.6);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #playButton {
