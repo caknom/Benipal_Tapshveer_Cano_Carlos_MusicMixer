@@ -3,43 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/grid.css">
   <title>Music Mixer</title>
 </head>
-<body>
 
-  <section class="container">
-    
+<body>
+  <section class="full-width-grid-con backgroundStars">
+    <h2 class="hidden">Background</h2>
+    <div class="col-span-full container1">
+      <div class="col-span-full container2"></div>
+    </div>
+  </section>
+
+  <section class="full-width-grid-con backgroundClouds"></section>
+  <section class="full-width-grid-con backgroundPlanets"></section>
+  <section class="full-width-grid-con foregroundClouds"></section>
+  
+  <section class="full-width-grid-con backgrounPanel">
+    <div class="audioPanel">
+      <div class="audioControls">
+        <img id="playButton" src="Images/Play_Button.svg" alt="Play">
+        <img id="pauseButton" src="Images/Pause_Button.svg" alt="Pause">
+        <img id="rewindButton" src="Images/Restart_button.svg" alt="Rewind">
+      </div>
+      <input id="volumeControl" type="range" min="0" max="100" step="1" aria-label="Volume Control">
+    </div>
+  </section>
+
+  <section class="grid-con">    
     <audio id="audioEl" src="./audio/Ancient_Flame.mp3"></audio>
 
-    <section id="music-mixer">
-        <!-- these are the draggable audio tracks -->
-      <div id="music-tracks">
-        <img data-trackref="Ancient_Flame" src="./images/albatroz.jpeg" alt="Album Art" class="track-ref" draggable="true">
-        <img data-trackref="Eye_Shadows" src="./images/stp.jpeg" alt="Album Art" class="track-ref" draggable="true">
+    <div id="music-mixer" class="m-col-start-1 m-col-end-2">
+      <div id="music-tracks" class="track-container">
+        <img data-trackref="af_instruments" src="./images/disk_yellow.svg" alt="Instruments" class="track-ref" draggable="true">
+        <img data-trackref="af_bass" src="./images/disk_orange.svg" alt="Bass" class="track-ref" draggable="true">
+        <img data-trackref="af_melody" src="./images/disk_cyan.svg" alt="Melody" class="track-ref" draggable="true">
+        <img data-trackref="af_drums" src="./images/disk_fucsia.svg" alt="Drums" class="track-ref" draggable="true">
       </div>
 
-      <!-- where we want to drop the audio tracks, dropzone -->
-      <div class="play-tracks">
+      <div class="play-tracks col-span-full">
         <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
-        <div class="drop-zone"></div>
+        <!-- Add more drop zones as needed -->
       </div>
-    </section>
-
-    <section class="audio-controls">
-      <img id="playButton" src="Images/Play_Button.svg">
-      <img id="pauseButton" src="Images/Pause_Button.svg">
-      <img id="rewindButton" src="Images/Restart_button.svg">
-      <input id="volumeControl" type="range" min="0" max="100" step="1">
-    </section>
-
+    </div>
   </section>
 
   <script src="js/main.js"></script>

@@ -37,10 +37,7 @@ function setVolume() {
 }
 
 // Event Listeners
-albumCovers.forEach(cover => cover.addEventListener(
-    'click',
-    loadAudio
-));
+albumCovers.forEach(cover => cover.addEventListener('click', loadAudio));
 
 playButton.addEventListener('click', playAudio);
 pauseButton.addEventListener('click', pauseAudio);
