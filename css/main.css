@@ -3,12 +3,11 @@
   padding: 0;
   margin: 0;
   /* border: solid 0.5px; */
-  box-sizing: border-box;
 }
 
 html, body {
-  /* overflow: hidden;
-  height: 100%; */
+  overflow: hidden;
+  height: 100%;
   font-family: arial, helvetica, sans-serif;
   font-size: 16px;
 }
@@ -32,18 +31,18 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  animation: twinkle1 2.5s infinite alternate;
+  animation: twinkle1 3s infinite alternate;
   overflow: hidden;
 }
 
 @keyframes twinkle1 {
   from {
-      opacity: 0.5;
-      transform: scale(1);
+      opacity: 0;
+      transform: scale(.98);
   }
   to {
       opacity: 1;
-      transform: scale(1.015);
+      transform: scale(1.005);
   }
 }
 
@@ -55,18 +54,18 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  animation: twinkle2 4s infinite alternate;
+  animation: twinkle2 3s infinite alternate;
   overflow: hidden;
 }
 
 @keyframes twinkle2 {
   from {
-      opacity: 0.3;
-      transform: scale(1);
+      opacity: 1;
+      transform: scale(1.005);
   }
   to {
-      opacity: 1;
-      transform: scale(0.985);
+      opacity: 0;
+      transform: scale(0.98);
   }
 }
 
@@ -74,68 +73,61 @@ html, body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background-image: url('../images/clouds_bg_back_left.svg'), url('../images/clouds_bg_back_right.svg');
+  background-image: url('../images/clouds_bg_backLeft.svg'), url('../images/clouds_bg_backRight.svg');
   background-size: cover;
   background-position: center;
+  overflow: visible;
 }
 
 .backgroundPlanets {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background-image: url('../images/planets_bg_left.svg'),
-  url('../images/planets_bg_right.svg'),
-  url('../images/planets_bg_middle.svg'),
-  url('../images/planets_bg_middle_moon.svg');
+  background-image: url('../images/planet_bg_left.svg'),
+  url('../images/planet_bg_right.svg'),
+  url('../images/planet_bg_mid.svg'),
+  url('../images/planet_bg_mid_moon.svg');
   background-size: cover;
   background-position: center;
+  overflow: visible;
 }
 
 .foregroundClouds {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0;
+  bottom: 0;
   left: 0;
-  background-image: url('../images/clouds_bg_top_left.svg'), url('../images/clouds_bg_top_right.svg');
+  background-image: url('../images/clouds_bg_frontLeft.svg'), url('../images/clouds_bg_frontRight.svg');
   background-size: cover;
   background-position: center;
+  overflow: visible;
 }
 
 .backgrounPanel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 800px;
   height: 100vh;
   background-image: url('../images/dj_panel_bg.svg');
-  background-size: cover;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 audio { 
   display: block; 
 }
 
-.hidden { 
-  display: none; 
-}
-
-#music-tracks {
-  transform: scale(.07);
-  position: absolute;
-  bottom: 95px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .audioPanel {
   position: absolute;
-  bottom: 95px;
+  bottom: 72px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -143,9 +135,9 @@ audio {
 .audioControls {
   display: flex;
   flex-direction: row;
-  gap: 38px;
-  transform: scale(1.2);
-  margin-bottom: 30px;
+  gap: 30px;
+  transform: scale(.74);
+  margin-bottom: 10px;
 }
 
 #volumeControl {
@@ -155,33 +147,35 @@ audio {
   transform: translateX(-50%);
 }
 
-#playButton {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  cursor: pointer;
-  width: 37px;
-  height: 37px;
-}
-
-#pauseButton{
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+#playButton, #pauseButton, #rewindButton {
   cursor: pointer;
   width: 35px;
   height: 35px;
 }
 
-#rewindButton {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  cursor: pointer;
-  width: 35px;
-  height: 35px;
+.track-ref {
+  position: absolute;
+  width: 64px;
+  height: auto;
 }
 
-.track-ref { 
-  cursor: pointer; padding: 1em; 
+#esInstruments {
+  bottom: 60px;
+  left: 24.5px;
 }
+
+#esBass {
+  bottom: 99px;
+  left: 53px;
+}
+
+#esMelody {
+  bottom: 60px;
+  right: 24.5px;
+}
+
+#esDrums {
+  bottom: 99px;
+  right: 53px;
+}
+
