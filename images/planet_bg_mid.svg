@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+      
+      #radial-gradient {
+        transform-origin: 49.6% 26.7%;
+        animation: shine 2s infinite alternate;
+      }
+
+      .cls-1 {
+        transform-origin: 49.6% 26.7%;
+        animation: float 3s infinite linear;
+      }
+
+      @keyframes shine {
+        from {
+          transform: scale(1.03);
+        }
+        to {
+          transform:  scale(.99);
+        }
+      }
+
+      @keyframes float {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+    <radialGradient id="radial-gradient" cx="957.64" cy="293.57" fx="921.92" fy="293.57" r="200.65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#56b9a7"/>
+      <stop offset=".76" stop-color="#52ccb5"/>
+      <stop offset=".82" stop-color="#54ccb6"/>
+      <stop offset=".86" stop-color="#5cceb9"/>
+      <stop offset=".89" stop-color="#6ad2c0"/>
+      <stop offset=".92" stop-color="#7ed8c9"/>
+      <stop offset=".94" stop-color="#98dfd5"/>
+      <stop offset=".97" stop-color="#b7e7e4"/>
+      <stop offset=".99" stop-color="#dcf1f5"/>
+      <stop offset=".99" stop-color="#def2f6"/>
+    </radialGradient>
+  </defs>
+  <circle class="cls-1" cx="959.35" cy="292.43" r="201.45"/>
+</svg>

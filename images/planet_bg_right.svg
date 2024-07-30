@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      #Layer_2 {
+        animation: float1 2.5s infinite alternate;
+      }
+
+      @keyframes float1 {
+        from {
+          transform: translate(-5px, 22px); 
+        }
+        to {
+          transform: translate(0px, 30px); 
+        }
+      }
+
+    </style>
+    <radialGradient id="radial-gradient" cx="-607.9" cy="504.03" fx="-645.89" fy="504.03" r="213.38" gradientTransform="translate(1070.31) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08789a"/>
+      <stop offset=".76" stop-color="#0090bd"/>
+      <stop offset=".82" stop-color="#0291be"/>
+      <stop offset=".86" stop-color="#0a98c2"/>
+      <stop offset=".9" stop-color="#18a3c9"/>
+      <stop offset=".92" stop-color="#2cb3d4"/>
+      <stop offset=".95" stop-color="#46c8e1"/>
+      <stop offset=".97" stop-color="#65e1f2"/>
+      <stop offset=".99" stop-color="#7ef5ff"/>
+    </radialGradient>
+  </defs>
+  <circle class="cls-1" cx="1671.53" cy="495.43" r="202.93"/>
+</svg>
