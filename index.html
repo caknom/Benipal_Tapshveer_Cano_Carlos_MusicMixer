@@ -8,20 +8,19 @@
   <title>Music Mixer</title>
 </head>
 
-<body class="grid-con m-col-start-2 m-col-end-12">
+<body>
 
   <section class="backgroundStars">
     <h2 class="hidden">Background</h2>
     <div class="col-span-full container1"></div>
     <div class="col-span-full container2"></div>
+    <div class="backgroundClouds"></div>
+    <div class="backgroundPlanets"></div>
+    <div class="foregroundClouds"></div>
   </section>
-  
-  <section class="backgroundClouds"></section>
-  <section class="backgroundPlanets"></section>
-  <section class="foregroundClouds"></section>
 
-  <section class="backgrounPanel">    
-    <audio id="audioEl" src="audio/Eye_Shadows.mp3"></audio>
+  <section class="backgrounPanel grid-con m-col-span-full l-col-span-full xl-col-span-full">    
+    <audio id="audioEl" src=""></audio>
 
     <div class="audioPanel">
       <div class="audioControls">
@@ -33,20 +32,28 @@
     </div>
 
     <div id="music-mixer">
-      <div id="music-tracks" class="track-container">
+      <div id="music-tracks">
         <!-- Drag Zone -->
-        <img id="esInstruments" data-trackref="es_instruments" src="./images/disk_yellow.svg" alt="Instruments" class="track-ref" draggable="true">
-        <img id="esBass" data-trackref="es_bass" src="./images/disk_orange.svg" alt="Bass" class="track-ref" draggable="true">
-        <img id="esMelody" data-trackref="es_melody" src="./images/disk_cyan.svg" alt="Melody" class="track-ref" draggable="true">
-        <img id="esDrums" data-trackref="es_drums" src="./images/disk_fucsia.svg" alt="Drums" class="track-ref" draggable="true">
+        <div id="esInstruments" class="track-ref">
+          <img data-trackref="es_instruments" src="./images/disk_yellow.svg" alt="Instruments" draggable="true">
+        </div>
+        <div id="esBass" class="track-ref">
+          <img data-trackref="es_bass" src="./images/disk_orange.svg" alt="Bass" draggable="true">
+        </div>
+        <div id="esMelody" class="track-ref">
+          <img data-trackref="es_melody" src="./images/disk_cyan.svg" alt="Melody" draggable="true">
+        </div>
+        <div id="esDrums" class="track-ref">
+          <img data-trackref="es_drums" src="./images/disk_fucsia.svg" alt="Drums" draggable="true">
+        </div>
       </div>
 
-      <div class="play-tracks col-span-full">
+      <div class="play-tracks">
         <!-- Drop Zone -->
-        <div class="drop-zone-1"></div>
-        <div class="drop-zone-2"></div>
-        <div class="drop-zone-3"></div>
-        <div class="drop-zone-4"></div>
+        <div id="dz1" class="drop-zone"></div>
+        <div id="dz2" class="drop-zone"></div>
+        <div id="dz3" class="drop-zone"></div>
+        <div id="dz4" class="drop-zone"></div>
       </div>
     </div>
   </section>
