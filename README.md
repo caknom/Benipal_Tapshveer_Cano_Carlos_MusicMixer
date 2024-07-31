@@ -1,5 +1,3 @@
-# Benipal_Tapshveer_Cano_Carlos_MusicMixer
-
 ![Reference img](./images/Reference%20Image.jpg)
 
 # CT Music Mixer
