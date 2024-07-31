@@ -121,6 +121,38 @@ html, body {
   background-repeat: no-repeat;
 }
 
+.drop-zone-1 {
+  position: absolute; top: 430px; left: 120px;
+  border: 2px dashed #ccc;
+  padding: 40px;
+  width: 100px;
+  height: 25px;
+}
+
+.drop-zone-2 {
+  position: absolute; top: 430px; left: 216px;
+  border: 2px dashed #ccc;
+  padding: 40px;
+  width: 100px;
+  height: 25px;
+}
+
+.drop-zone-3 {
+  position: absolute; top: 430px; left: 480px;
+  border: 2px dashed #ccc;
+  padding: 40px;
+  width: 100px;
+  height: 25px;
+}
+
+.drop-zone-4 {
+  position: absolute; top: 430px; left: 580px;
+  border: 2px dashed #ccc;
+  padding: 40px;
+  width: 100px;
+  height: 25px;
+}
+
 audio { 
   display: block; 
 }
