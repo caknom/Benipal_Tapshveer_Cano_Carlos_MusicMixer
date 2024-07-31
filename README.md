@@ -2,17 +2,24 @@
 
 ![Reference img](./images/Reference%20Image.jpg)
 
-# "TITLE" Music Mixer
-"TITLE" Music Mixer is an online tool to combine music tracks In "TITLE" Music Mixer you can combine upto 4 music tracks from the provided 8 tracks to create a single masterpiece music track.
+# CT Music Mixer
+CT Music Mixer is an online tool to combine music tracks In "TITLE" Music Mixer you can combine upto 4 music tracks from the provided 8 tracks to create a single masterpiece music track.
 
 ## Installation
-"TITLE" Music Mixer is an online tool & it doesn't require any installation.
+CT Music Mixer is an online tool & it doesn't require any installation.
 
 ## Usage
-1. Choose the tracks to combine (max 4 out of 8 music tracks)
-2. Drag'n Drop the tracks onto the 4 discs provided
-3. adjust the volume, etc
+1. Choose the tracks to combine
+2. Drag'n Drop the tracks
+3. adjust the volume
 4. Press play!
+
+## Features:
+- Volume
+- Play
+- Pause
+- Restart
+- Combine's Tracks Automatically 
 
 ## Contributing
 Fork it!
