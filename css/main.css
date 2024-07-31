@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* border: solid 0.5px; */
+  border: solid 0.5px;
 }
 
 html, body {
@@ -207,12 +207,210 @@ html, body {
   right: 0;
 }
 
+
+/* ---Mobile Sized Screens--- */
+
+@media screen and (max-width: 420px) {
+  #container {
+    transform: rotate(90deg);
+  }
+
+  .backgroundStars {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vw;
+  }
+
+  .backgroundClouds,
+  .backgroundPlanets,
+  .foregroundClouds {
+    position: absolute;
+    height: 100vw;
+    width: 100vh;
+  }
+
+  #mixer-container {
+    position: absolute;
+
+  }
+
+  .backgrounPanel {
+    position: absolute;
+    translate: -10vh;
+    bottom: 0;
+    left: 50vh;
+    scale: .85;
+    width: 900px;
+    transform-origin: bottom;
+    background-image: url("../images/dj_panel_bg.svg");
+    background-repeat: no-repeat;
+  }
+
+  .track-ref {
+    position: absolute;
+    width: 74px;
+    height: 30px;
+  }
+  
+  #esInstruments {
+    bottom: 71px;
+    left: 24.5px;
+  }
+  
+  #esMelody {
+    bottom: 71px;
+    right: 24.5px;
+  }
+  
+  #esDrums {
+    bottom: 114px;
+    right: 56px;
+  }
+  
+  #esBass {
+    bottom: 114px;
+    left: 58px;
+  }
+  
+  .drop-zone {
+    position: absolute;
+    width: 72px;
+    height: 30px;
+  }
+  
+  #dz1 {
+    bottom: 86px;
+    left: 151px;
+  }
+  
+  #dz2 {
+    bottom: 86px;
+    left: 259px;
+  }
+  
+  #dz3 {
+    bottom: 86px;
+    right: 152px;
+  }
+  
+  #dz4 {
+    bottom: 86px;
+    right: 259px;
+  }
+  
+  #dz1 img, #dz2 img, #dz3 img, #dz4 img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+
 /* ---Tablet Sized Screens--- */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  #container {
+    transform: rotate(90deg);
+  }
+
+  .backgroundStars {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vw;
+  }
+
+  .backgroundClouds,
+  .backgroundPlanets,
+  .foregroundClouds {
+    position: absolute;
+    height: 100vw;
+    width: 100vh;
+  }
+
+  #mixer-container {
+    min-width: 80vh;
+    margin-left: 30vh;
+  }
+
+  .backgrounPanel {
+    position: absolute;
+    bottom: 0;
+    left: 50vh;
+    transform: translateX(-70vh) scale(1.1);
+    transform-origin: bottom;
+    background-image: url("../images/dj_panel_bg.svg");
+    background-repeat: no-repeat;
+  }
+  
+  .track-ref {
+    position: absolute;
+    width: 74px;
+    height: 30px;
+  }
+  
+  #esInstruments {
+    bottom: 71px;
+    left: 24.5px;
+  }
+  
+  #esMelody {
+    bottom: 71px;
+    right: 24.5px;
+  }
+  
+  #esDrums {
+    bottom: 114px;
+    right: 56px;
+  }
+  
+  #esBass {
+    bottom: 114px;
+    left: 56px;
+  }
+  
+  .drop-zone {
+    position: absolute;
+    width: 72px;
+    height: 30px;
+  }
+  
+  #dz1 {
+    bottom: 86px;
+    left: 151px;
+  }
+  
+  #dz2 {
+    bottom: 86px;
+    left: 259px;
+  }
+  
+  #dz3 {
+    bottom: 86px;
+    right: 152px;
+  }
+  
+  #dz4 {
+    bottom: 86px;
+    right: 259px;
+  }
+  
+  #dz1 img, #dz2 img, #dz3 img, #dz4 img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
 
 }
+
 
 /* ---Desktop Sized Screens--- */
 
@@ -313,8 +511,6 @@ html, body {
     background-position: center;
     overflow: visible;
   }
-
-  /* sdfsdfasdfasdadffasdfasdfasdfasdf */
 
   .backgrounPanel {
     position: absolute;
