@@ -96,7 +96,7 @@ ONLY when it is inside the 'hero' container */
 
 /* ---Tablet Library Grid Styles--- */
 
-@media screen and (min-width: 768px) { 
+@media screen and (max-width: 768px) { 
    
    .grid-con { 
       display: grid; 

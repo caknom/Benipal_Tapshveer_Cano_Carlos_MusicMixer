@@ -9,55 +9,56 @@
 </head>
 
 <body>
+  <main id="container">
+    <section class="backgroundStars">
+      <h2 class="hidden">Background</h2>
+      <div class="col-span-full container1"></div>
+      <div class="col-span-full container2"></div>
+      <div class="backgroundClouds"></div>
+      <div class="backgroundPlanets"></div>
+      <div class="foregroundClouds"></div>
+    </section>
 
-  <section class="backgroundStars">
-    <h2 class="hidden">Background</h2>
-    <div class="col-span-full container1"></div>
-    <div class="col-span-full container2"></div>
-    <div class="backgroundClouds"></div>
-    <div class="backgroundPlanets"></div>
-    <div class="foregroundClouds"></div>
-  </section>
+    <section id="mixer-container" class="backgrounPanel grid-con m-col-span-full l-col-span-full xl-col-span-full">    
+      <audio id="audioEl" src=""></audio>
 
-  <section class="backgrounPanel grid-con m-col-span-full l-col-span-full xl-col-span-full">    
-    <audio id="audioEl" src=""></audio>
-
-    <div class="audioPanel">
-      <div class="audioControls">
-        <img id="playButton" src="images/play_button.svg" alt="Play">
-        <img id="pauseButton" src="images/pause_button.svg" alt="Pause">
-        <img id="rewindButton" src="images/restart_button.svg" alt="Rewind">
-      </div>
-      <input id="volumeControl" type="range" min="0" max="100" step="1" aria-label="Volume Control">
-    </div>
-
-    <div id="music-mixer">
-      <div id="music-tracks">
-        <!-- Drag Zone -->
-        <div id="esInstruments" class="track-ref">
-          <img data-trackref="es_instruments" src="./images/disk_yellow.svg" alt="Instruments" draggable="true">
+      <div class="audioPanel">
+        <div class="audioControls">
+          <img id="playButton" src="images/play_button.svg" alt="Play">
+          <img id="pauseButton" src="images/pause_button.svg" alt="Pause">
+          <img id="rewindButton" src="images/restart_button.svg" alt="Rewind">
         </div>
-        <div id="esBass" class="track-ref">
-          <img data-trackref="es_bass" src="./images/disk_orange.svg" alt="Bass" draggable="true">
-        </div>
-        <div id="esMelody" class="track-ref">
-          <img data-trackref="es_melody" src="./images/disk_cyan.svg" alt="Melody" draggable="true">
-        </div>
-        <div id="esDrums" class="track-ref">
-          <img data-trackref="es_drums" src="./images/disk_fucsia.svg" alt="Drums" draggable="true">
-        </div>
+        <input id="volumeControl" type="range" min="0" max="100" step="1" aria-label="Volume Control">
       </div>
 
-      <div class="play-tracks">
-        <!-- Drop Zone -->
-        <div id="dz1" class="drop-zone"></div>
-        <div id="dz2" class="drop-zone"></div>
-        <div id="dz3" class="drop-zone"></div>
-        <div id="dz4" class="drop-zone"></div>
-      </div>
-    </div>
-  </section>
+      <div id="music-mixer">
+        <div id="music-tracks">
+          <!-- Drag Zone -->
+          <div id="esInstruments" class="track-ref">
+            <img data-trackref="es_instruments" src="./images/disk_yellow.svg" alt="Instruments" draggable="true">
+          </div>
+          <div id="esBass" class="track-ref">
+            <img data-trackref="es_bass" src="./images/disk_orange.svg" alt="Bass" draggable="true">
+          </div>
+          <div id="esMelody" class="track-ref">
+            <img data-trackref="es_melody" src="./images/disk_cyan.svg" alt="Melody" draggable="true">
+          </div>
+          <div id="esDrums" class="track-ref">
+            <img data-trackref="es_drums" src="./images/disk_fucsia.svg" alt="Drums" draggable="true">
+          </div>
+        </div>
 
-  <script src="js/main.js"></script>
+        <div class="play-tracks">
+          <!-- Drop Zone -->
+          <div id="dz1" class="drop-zone"></div>
+          <div id="dz2" class="drop-zone"></div>
+          <div id="dz3" class="drop-zone"></div>
+          <div id="dz4" class="drop-zone"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </main>
 </body>
 </html>
