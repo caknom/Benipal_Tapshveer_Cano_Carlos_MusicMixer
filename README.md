@@ -17,7 +17,6 @@ CT Music Mixer is an online tool & it doesn't require any installation.
 - Play
 - Pause
 - Restart
-- Combine's Tracks Automatically 
 
 ## Contributing
 Fork it!
