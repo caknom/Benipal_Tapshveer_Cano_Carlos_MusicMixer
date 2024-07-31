@@ -12,7 +12,7 @@ CT Music Mixer is an online tool & it doesn't require any installation.
 3. adjust the volume
 4. Press play!
 
-## Features:
+## Features
 - Volume
 - Play
 - Pause
