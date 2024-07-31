@@ -3,7 +3,7 @@
 ![Reference img](./images/Reference%20Image.jpg)
 
 # CT Music Mixer
-CT Music Mixer is an online tool to combine music tracks In "TITLE" Music Mixer you can combine upto 4 music tracks from the provided 8 tracks to create a single masterpiece music track.
+CT Music Mixer is an online tool to combine music tracks In CT Music Mixer you can combine the 4 music tracks to create a single masterpiece music track.
 
 ## Installation
 CT Music Mixer is an online tool & it doesn't require any installation.
